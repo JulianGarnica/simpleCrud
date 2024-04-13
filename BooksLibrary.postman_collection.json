@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "c214c96b-3559-4fd3-99ee-36726c0970fe",
+		"name": "BooksLibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13751159"
+	},
+	"item": [
+		{
+			"name": "getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUniqueBook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"El quijote 2\",\r\n    \"description\": \"La historia sigue las aventuras de un caballero llamado Don Quijote que, enloquecido por la lectura excesiva de libros de caballerías, decide convertirse en un caballero andante para luchar contra el mal y hacer justicia en el mundo. Acompañado por su fiel escudero Sancho Panza, un campesino realista y práctico, Don Quijote se embarca en una serie de aventuras cómicas y a menudo absurdas. La novela es conocida por su profundidad psicológica, su sátira social y su exploración de temas como la realidad y la locura, la verdad y la ilusión, y la naturaleza de la literatura y la ficción.\",\r\n    \"bookstore\": \"Librería Bogotá\",\r\n    \"locationBookstore\": \"A2 - 21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"El quijote\",\r\n    \"description\": \"La historia sigue las aventuras de un caballero llamado Don Quijote que, enloquecido por la lectura excesiva de libros de caballerías, decide convertirse en un caballero andante para luchar contra el mal y hacer justicia en el mundo. Acompañado por su fiel escudero Sancho Panza, un campesino realista y práctico, Don Quijote se embarca en una serie de aventuras cómicas y a menudo absurdas. La novela es conocida por su profundidad psicológica, su sátira social y su exploración de temas como la realidad y la locura, la verdad y la ilusión, y la naturaleza de la literatura y la ficción.\",\r\n    \"bookstore\": \"Librería Bogotá\",\r\n    \"locationBookstore\": \"A2 - 21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
